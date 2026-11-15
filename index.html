@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>AI EMPIRE — AI-системы, сайты и автоматизация бизнеса</title>
+<meta name="description" content="AI EMPIRE — независимая digital-студия. Создаём сайты, AI-ассистентов и автоматизацию для бизнеса. Исследуйте интерактивные демо и тарифы от $299.">
+<meta name="theme-color" content="#fafbff">
+<script src="/js/runtime.js"></script>
+<script src="/js/theme.js"></script>
+<meta property="og:type" content="website">
+<meta property="og:title" content="AI EMPIRE — Digital systems. Human ambition.">
+<meta property="og:description" content="Сайты, AI-ассистенты и автоматизация. Одна продуманная система для вашего бизнеса.">
+<meta property="og:image" content="/assets/images/hero.webp">
+<!-- <link rel="canonical" href="https://yourdomain.com/"> ← вкажіть домен -->
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;500;800&display=swap&subset=cyrillic" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/premium.css">
+<link rel="stylesheet" href="/css/winter.css">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<script src="/assets/vendor/gsap.min.js" defer></script>
+<script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="js/config.js" defer></script>
+<script src="js/i18n.js" defer></script>
+<script src="js/v3-i18n.js" defer></script>
+<script src="js/main.js" defer></script>
+<script src="js/premium.js" defer></script>
+<script src="js/winter.js" defer></script>
+</head>
+<body id="top" class="is-loading">
+<a class="skip" href="#main" data-i18n="skip">Skip</a>
+<div class="loader" aria-hidden="true"><span id="loaderName"></span></div>
+<div class="bar" aria-hidden="true"></div>
+<div class="atmo" aria-hidden="true"><i class="b b1"></i><i class="b b2"></i><i class="b b3"></i><i class="b b4"></i></div>
+<canvas id="snow" class="snow-canvas" aria-hidden="true" data-theme-only="winter"></canvas>
+<header class="hdr shell">
+  <div class="hrow">
+    <a class="brand" href="#top" aria-label="AI Empire"><span class="brand-mark" aria-hidden="true">✳</span><span id="brandText">AI EMPIRE</span><small>DIGITAL & AI STUDIO</small></a>
+    <div class="tools">
+      <div class="theme-switch" role="group" data-i18n-aria="theme.label" aria-label="Theme"><button type="button" data-theme-set="winter" aria-pressed="true"><span aria-hidden="true">❄</span><b data-i18n="theme.winter">Winter</b></button><button type="button" data-theme-set="classic" aria-pressed="false"><span aria-hidden="true">◐</span><b data-i18n="theme.classic">Classic</b></button></div>
+      <div class="lang" role="group" aria-label="Language"><button data-l="ua">UA</button><button data-l="ru">RU</button><button data-l="en">EN</button></div>
+      <a class="btn btn--sm hcta" href="#contact" data-i18n="nav.cta"></a>
+      <button class="burger" aria-expanded="false" aria-controls="nav" aria-label="Menu"><i></i><i></i></button>
+    </div>
+  </div>
+  <nav class="nav" id="nav" aria-label="Main">
+    <a href="#services" data-i18n="nav.services"></a><a href="#process" data-i18n="nav.process"></a><a href="#portfolio" data-i18n="nav.work"></a><a href="#products" data-i18n="nav.products"></a><a href="#pricing" data-i18n="nav.pricing"></a><a href="#contact" data-i18n="nav.contact"></a>
+  </nav>
+</header>
+<main id="main" tabindex="-1">
+  <section class="hero shell" aria-labelledby="hero-title">
+    <canvas id="dots" aria-hidden="true"></canvas>
+    <div class="hero-frost" aria-hidden="true" data-theme-only="winter" data-depth="-.3"></div>
+    <svg class="ice-lines" aria-hidden="true" data-theme-only="winter" data-depth="-.6" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice"><path pathLength="1" d="M-10 170 L160 214 L250 196 L410 262 L560 238"/><path pathLength="1" d="M160 214 L182 150 M250 196 L268 246 M410 262 L452 210 M410 262 L430 318"/><path pathLength="1" d="M1450 610 L1290 560 L1200 590 L1060 520 L930 548"/><path pathLength="1" d="M1290 560 L1270 620 M1200 590 L1186 530 M1060 520 L1020 470 M1060 520 L1046 580"/><path pathLength="1" d="M1180 -10 L1214 118 L1186 196 L1236 300"/><path pathLength="1" d="M1214 118 L1270 136 M1186 196 L1130 214"/><circle cx="410" cy="262" r="3"/><circle cx="1060" cy="520" r="3"/><circle cx="1214" cy="118" r="2.5"/></svg>
+    <div class="hero-topline"><p class="kicker"><span class="live-dot"></span><span data-i18n="hero.kicker">INDEPENDENT DIGITAL & AI STUDIO</span></p><span class="edition">EST. NOW / BUILT FOR WHAT'S NEXT</span></div>
+    <div class="hero-main">
+      <div class="hero-copy">
+        <h1 id="hero-title" class="split big" data-i18n="hero.title">AI, КОТОРЫЙ РАБОТАЕТ НА ВАШ БИЗНЕС.</h1>
+        <p class="lead" data-r data-i18n="hero.sub">Соединяем дизайн, технологии и AI в одну систему. Чтобы вы занимались развитием, а не рутиной.</p>
+        <div class="cta" data-r>
+          <a class="btn mag" href="#contact"><span data-i18n="hero.start">Обсудить проект</span><span aria-hidden="true">↗</span></a>
+          <a class="text-cta" href="#system"><span class="play-ring" aria-hidden="true">↘</span><span data-i18n="hero.explore">Посмотреть, как это работает</span></a>
+        </div>
+        <p class="hero-caption" data-i18n="hero.caption">ОТ ПЕРВОЙ ЗАЯВКИ ДО СИСТЕМЫ, КОТОРАЯ РАСТЁТ С ВАМИ.</p>
+      </div>
+      <div class="hero-visual">
+        <figure class="photo-mask hero-photo" data-depth=".35"><img src="/assets/images/winter-hero.webp" width="1400" height="1600" alt="Заснеженный хвойный склон и горы в морозной дымке" fetchpriority="high" decoding="async" data-parallax data-theme-only="winter"><img src="/assets/images/hero.webp" width="1400" height="1600" alt="Тёплая минималистичная архитектура и естественный свет" loading="lazy" decoding="async" data-parallax data-theme-only="classic"><figcaption><span>HUMAN AMBITION.</span><span>ARTIFICIAL INTELLIGENCE.</span></figcaption></figure>
+        <div class="hero-orbit" aria-hidden="true" data-depth="1"><svg viewBox="0 0 160 160"><circle cx="80" cy="80" r="63"/><ellipse cx="80" cy="80" rx="27" ry="63" transform="rotate(40 80 80)"/><ellipse cx="80" cy="80" rx="27" ry="63" transform="rotate(-40 80 80)"/><path d="M17 80h126M80 17v126"/><circle cx="80" cy="80" r="7" class="orbit-core"/></svg></div>
+        <div class="hero-note" data-depth=".7"><span class="live-dot"></span><span data-i18n="hero.note">Технологии работают. Вы создаёте.</span><span aria-hidden="true">↗</span></div>
+        <span class="photo-index">FIG. 01 — SPACE FOR NEW IDEAS</span>
+      </div>
+    </div>
+    <div class="hero-bottom"><span data-i18n="hero.bottom">ДИЗАЙН С ХАРАКТЕРОМ. СИСТЕМЫ СО СМЫСЛОМ.</span><a href="#services"><span data-i18n="scroll">Листайте, чтобы исследовать</span> ↓</a></div>
+    <noscript><p>Для интерактивной демонстрации и отправки заявки включите JavaScript. <a href="/services/">Изучить услуги</a>.</p></noscript>
+  </section>
+  <div class="snow-haze" aria-hidden="true" data-theme-only="winter"></div>
+
+  <section class="shell system-section" id="system" aria-labelledby="system-title">
+    <div class="section-label"><span>01 / CONNECT THE DOTS</span><span data-i18n="system.eyebrow">Одна система. Никакого хаоса.</span></div>
+    <div class="system-heading"><h2 id="system-title" data-i18n="system.title">Ваш бизнес. На связи.</h2><p data-i18n="system.sub">Нажмите на узел и посмотрите, как заявка превращается в следующий шаг.</p></div>
+    <div class="pipeline-canvas" data-r>
+      <svg class="pipeline-lines" viewBox="0 0 1000 150" preserveAspectRatio="none" aria-hidden="true"><defs><clipPath id="wireClip"><rect id="wireClipRect" x="0" y="0" width="1000" height="150"/></clipPath></defs><path class="wire" pathLength="1" d="M125 75H375H625H875"/><g clip-path="url(#wireClip)"><path class="wire-signal" d="M125 75H375H625H875"/><path class="wire-signal wire-signal--b" d="M125 75H375H625H875"/></g></svg>
+      <ol class="flow" id="flow"></ol>
+    </div>
+    <div class="pipeline-detail"><div><span id="flowIndex" class="micro">01 / LEAD</span><p id="flowDetail" aria-live="polite"></p></div><button class="btn btn--line" id="runFlow" type="button"><span data-i18n="system.run">Запустить демо</span><span aria-hidden="true">↗</span></button></div>
+    <div class="agent-console" role="group" aria-labelledby="agentConsoleTitle">
+      <div class="agent-console-head"><span class="micro" id="agentConsoleTitle" data-i18n="agents.title">Управление агентами / демо</span><span class="agent-status" id="agentStatus" aria-live="polite"></span></div>
+      <div class="agent-switches">
+        <button type="button" role="switch" aria-checked="true" data-agent="1"><i aria-hidden="true"></i><span data-i18n="agents.qualify">AI-квалификация</span></button>
+        <button type="button" role="switch" aria-checked="true" data-agent="2"><i aria-hidden="true"></i><span data-i18n="agents.crm">Синхронизация CRM</span></button>
+        <button type="button" role="switch" aria-checked="true" data-agent="3"><i aria-hidden="true"></i><span data-i18n="agents.reply">Ответ и задача</span></button>
+      </div>
+      <label class="agent-load" for="agentLoad"><span data-i18n="agents.load">Поток заявок</span><input type="range" id="agentLoad" min="1" max="3" step="1" value="2"><output id="agentLoadOut" for="agentLoad"></output></label>
+    </div>
+    <p class="micro demo-disclosure" data-i18n="system.disclaimer">Интерактивная схема: демонстрационные события не создают реальные заявки.</p>
+  </section>
+
+  <section class="shell sec frost-network" id="network" data-theme-only="winter" aria-labelledby="network-title">
+    <div class="section-label"><span>❄ FROST NETWORK</span><span data-i18n="net.label">Архитектура AI-агентов</span></div>
+    <div class="network-layout">
+      <div class="network-copy">
+        <h2 id="network-title" class="split big2" data-i18n="net.title"></h2>
+        <p class="sub" data-i18n="net.sub"></p>
+        <div class="network-legend" id="networkLegend" role="group" data-i18n-aria="net.pick" aria-label="Nodes"></div>
+      </div>
+      <div class="network-stage"><canvas id="frostNetwork" role="img" data-i18n-aria="net.aria" aria-label="AI agent network"></canvas></div>
+    </div>
+    <p class="micro demo-disclosure" data-i18n="net.note"></p>
+  </section>
+
+  <section class="shell sec" id="services">
+    <div class="section-label"><span>02 / OUR EXPERTISE</span><a href="/services/" data-i18n="svc.all">Все направления ↗</a></div>
+    <div class="shead">
+      <h2 class="split big2" data-i18n="svc.title"></h2>
+      <p class="sub" data-r data-i18n="svc.sub"></p>
+    </div>
+    <div class="svc-grid" id="serviceList"></div>
+  </section>
+
+  <section class="shell sec" id="process">
+    <div class="section-label"><span>03 / FROM IDEA TO IMPACT</span><span data-i18n="proc.label">Понятно на каждом этапе</span></div>
+    <h2 class="split big2" data-i18n="proc.title"></h2>
+    <ol class="steps rule" id="steps" data-r></ol>
+  </section>
+
+  <div class="snow-haze snow-haze--deep" aria-hidden="true" data-theme-only="winter"></div>
+  <section class="visual-break" aria-label="Студийный подход">
+    <figure class="photo-mask"><img src="/assets/images/winter-forest.webp" width="1600" height="1000" alt="Хвойный лес, растворяющийся в морозном тумане" loading="lazy" decoding="async" data-parallax data-theme-only="winter"><img src="/assets/images/studio.webp" width="1600" height="1000" alt="Светлое рабочее пространство для новых идей" loading="lazy" decoding="async" data-parallax data-theme-only="classic"></figure>
+    <div class="visual-copy shell"><span class="micro">BUILT AROUND PEOPLE.</span><h2 class="split" data-i18n="visual.title">БОЛЬШЕ ПРОСТРАНСТВА ДЛЯ ГЛАВНОГО.</h2><p data-i18n="visual.sub">Освободите время для идей, людей и следующего большого шага.</p></div>
+  </section>
+
+  <section class="shell sec" id="about">
+    <div class="row rule" data-r>
+      <h2 class="split" data-i18n="about.title"></h2>
+      <ul class="dots-list" id="aboutList"></ul>
+    </div>
+    <div class="row rule" data-r>
+      <h2 class="split" data-i18n="about.tech"></h2>
+      <ul class="chips" id="techList"></ul>
+    </div>
+  </section>
+
+  <section class="sec" id="portfolio">
+    <div class="shell section-label"><span>04 / SELECTED CONCEPTS</span><a href="/portfolio/" data-i18n="work.all">Исследовать проекты ↗</a></div>
+    <div class="shell thead">
+      <h2 class="split big2" data-i18n="portfolio.title"></h2>
+      <div class="ctrl" data-theme-only="classic"><button data-d="-1" aria-label="Previous"><svg viewBox="0 0 24 24"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></button><button data-d="1" aria-label="Next"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div>
+    </div>
+    <div class="track" id="track" tabindex="0" role="region" aria-label="Portfolio" data-theme-only="classic"></div>
+    <div class="winter-showcase" id="showcase" data-theme-only="winter">
+      <div class="showcase-viewport" id="showcaseViewport" tabindex="0" role="region" data-i18n-aria="show.aria" aria-label="Winter showcase"><div class="showcase-track" id="showcaseTrack"></div></div>
+      <div class="shell showcase-foot"><span class="micro">❄ WINTER SHOWCASE</span><span class="micro" data-i18n="show.hint"></span></div>
+    </div>
+    <div class="shell"><div class="prog" data-theme-only="classic"><i id="prog"></i></div><p class="note" data-i18n="portfolio.note"></p></div>
+  </section>
+
+  <section class="shell sec" id="products">
+    <div class="section-label"><span>05 / THE PRODUCT LAB</span><span data-i18n="prod.lab">Наши идеи обретают форму</span></div>
+    <div class="shead">
+      <h2 class="split big2" data-i18n="prod.title"></h2>
+      <p class="sub" data-r data-i18n="prod.sub"></p>
+    </div>
+    <div class="prod-grid" id="productList"></div>
+    <div class="product-showcase" id="productShowcase"><div class="product-description"><span class="micro">AI EMPIRE / PRODUCT LAB</span><h3 id="productName"></h3><p id="productDescription"></p><a class="link" id="productLink" href="/products/adminbot/"><span data-i18n="prod.detail">Исследовать продукт</span> ↗</a><p class="note" data-i18n="prod.preview">Концепция продукта. Доступ — после запуска.</p></div><div class="product-image photo-mask"><img src="/assets/images/products.webp" width="1200" height="900" alt="Рабочие инструменты цифровой студии" loading="lazy" decoding="async"><div class="product-ui" id="productUi" aria-hidden="true"></div><div class="product-widget"><span class="live-dot"></span><span id="productWidget">AI Admin Bot</span><span>↗</span></div></div></div>
+  </section>
+
+  <section class="shell sec" id="demo" aria-labelledby="demo-title">
+    <div class="demo-layout"><div class="demo-copy"><span class="micro">TRY IT YOURSELF / SCRIPTED DEMO</span><h2 id="demo-title" class="split big2" data-i18n="demo.title">ПОЗНАКОМЬТЕСЬ С ВАШИМ AI-АДМИНИСТРАТОРОМ.</h2><p data-i18n="demo.sub">Выберите сценарий. Ассистент уточнит задачу и покажет, как передать её команде.</p><div class="demo-scenarios" role="group" aria-label="Demo scenarios"><button type="button" data-scenario="booking" class="on" aria-pressed="true" data-i18n="demo.booking">Запись на встречу</button><button type="button" data-scenario="support" aria-pressed="false" data-i18n="demo.support">Вопрос об услугах</button><button type="button" data-scenario="lead" aria-pressed="false" data-i18n="demo.lead">Квалификация лида</button></div><p class="note" data-i18n="demo.disclaimer">Локальная сценарная демонстрация. Сообщения не отправляются в AI или CRM. Не вводите персональные данные.</p></div><div class="chat-window"><div class="chat-head"><span class="assistant-avatar" aria-hidden="true">✳</span><div><strong>EMPIRE ASSISTANT</strong><small><span class="live-dot"></span><span data-i18n="demo.ready">Демонстрационный режим</span></small></div><button id="resetDemo" type="button" aria-label="Reset demo">↺</button></div><div id="chatMessages" class="chat-messages" role="log" aria-live="polite" aria-relevant="additions"></div><div id="chatOptions" class="chat-options"></div><form id="demoForm" class="chat-input"><label class="sr-only" for="demoMessage" data-i18n="demo.input">Сообщение для демонстрации</label><input id="demoMessage" maxlength="200" autocomplete="off" data-i18n-ph="demo.placeholder" placeholder="Попробуйте задать вопрос…"><button type="submit" aria-label="Send demo message">↗</button></form><span class="chat-foot">AI EMPIRE · INTERACTIVE PREVIEW</span></div></div>
+  </section>
+
+  <section class="shell sec frozen-data" id="data" data-theme-only="winter" aria-labelledby="data-title">
+    <div class="section-label"><span>❄ FROZEN DATA</span><span data-i18n="data.label"></span></div>
+    <div class="shead"><h2 id="data-title" class="split big2" data-i18n="data.title"></h2><p class="sub" data-i18n="data.sub"></p></div>
+    <div class="frost-kpis" id="frostKpis"></div>
+    <div class="frost-charts"><figure class="frost-chart" id="frostBars"></figure><figure class="frost-chart" id="frostRing"></figure></div>
+    <p class="micro demo-disclosure" data-i18n="data.note"></p>
+  </section>
+  <div class="snow-haze" aria-hidden="true" data-theme-only="winter"></div>
+
+  <section class="shell sec" id="pricing">
+    <div class="section-label"><span>06 / CLEAR INVESTMENT</span><span>USD / $</span></div>
+    <div class="shead">
+      <h2 class="split big2" data-i18n="price.title"></h2>
+      <p class="sub" data-r data-i18n="price.sub"></p>
+    </div>
+    <div class="pricing-tabs" role="tablist" aria-label="Pricing categories"><button type="button" role="tab" id="price-web" aria-controls="planList" data-price-category="web" aria-selected="true" data-i18n="price.web">Сайты</button><button type="button" role="tab" id="price-assistants" aria-controls="planList" data-price-category="assistants" aria-selected="false" tabindex="-1" data-i18n="price.assistants">AI-боты</button><button type="button" role="tab" id="price-automation" aria-controls="planList" data-price-category="automation" aria-selected="false" tabindex="-1" data-i18n="price.automation">Автоматизация</button><button type="button" role="tab" id="price-saas" aria-controls="planList" data-price-category="saas" aria-selected="false" tabindex="-1" data-i18n="price.saas">SaaS-подписки</button></div>
+    <div class="plans" id="planList" role="tabpanel" aria-labelledby="price-web" tabindex="0"></div>
+    <p id="pricingSource" class="micro"></p>
+    <p class="note" data-i18n="price.note"></p>
+  </section>
+
+  <section class="shell sec end" id="contact">
+    <div class="section-label"><span>07 / YOUR NEXT CHAPTER</span><span data-i18n="contact.label">Начинается с разговора</span></div>
+    <div class="contact">
+      <div>
+        <h2 class="split giant" data-i18n="contact.title"></h2>
+        <p class="lead" data-r data-i18n="contact.sub"></p>
+        <div class="direct" data-r>
+          <p class="note" data-i18n="contact.or"></p>
+          <a class="link mag" data-tg><span data-i18n="tg"></span><svg viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+        </div>
+      </div>
+      <form class="form" id="leadForm" novalidate data-r>
+        <div class="fld"><label for="f-name" data-i18n="f.name"></label><input id="f-name" name="name" autocomplete="name" maxlength="80" required></div>
+        <div class="fld"><label for="f-contact" data-i18n="f.contact"></label><input id="f-contact" name="contact" autocomplete="email" maxlength="120" required data-i18n-ph="f.contactPh"></div>
+        <div class="fld half"><label for="f-service" data-i18n="f.service"></label>
+          <select id="f-service" name="service" required>
+            <option value="" data-i18n="f.pick"></option><option value="automation" data-i18n="opt.automation"></option><option value="web" data-i18n="opt.web"></option><option value="assistants" data-i18n="opt.assistants"></option><option value="leadgen" data-i18n="opt.leadgen"></option><option value="saas" data-i18n="opt.saas"></option><option value="other" data-i18n="opt.other"></option>
+          </select></div>
+        <div class="fld half"><label for="f-budget" data-i18n="f.budget"></label>
+          <select id="f-budget" name="budget" required>
+            <option value="" data-i18n="f.pick"></option><option value="lt299" data-i18n="opt.lt299"></option><option value="299-799" data-i18n="opt.299-799"></option><option value="799-1999" data-i18n="opt.799-1999"></option><option value="1999+" data-i18n="opt.1999+"></option><option value="unknown" data-i18n="opt.unknown"></option>
+          </select></div>
+        <div class="fld"><label for="f-message" data-i18n="f.message"></label><textarea id="f-message" name="message" rows="4" maxlength="2000" required data-i18n-ph="f.messagePh"></textarea></div>
+        <div class="hp" aria-hidden="true"><label for="f-website">Website</label><input id="f-website" name="website" tabindex="-1" autocomplete="off"></div>
+        <div class="fld chk"><input type="checkbox" id="f-consent" name="consent" required><label for="f-consent" data-i18n="f.consent"></label></div>
+        <button class="btn btn--big mag" type="submit" data-i18n="f.submit"></button>
+        <p class="fstatus" id="fStatus" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+</main>
+<footer class="shell foot">
+  <div class="fcols rule" data-r>
+    <div><h4 data-i18n="foot.contacts"></h4><p id="fMail"></p><p id="fTg"></p></div>
+    <div><h4 data-i18n="foot.nav"></h4><a href="#services" data-i18n="nav.services"></a><a href="#portfolio" data-i18n="nav.work"></a><a href="#pricing" data-i18n="nav.pricing"></a><a class="up" href="#top"><span data-i18n="foot.up"></span> <svg viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></svg></a></div>
+    <div><h4 data-i18n="foot.social"></h4><div id="socials"></div></div>
+  </div>
+  <div class="footer-wordmark" aria-hidden="true">AI EMPIRE<span>®</span></div><div class="footer-bottom"><p class="copy">© <span id="yr"></span> <span id="copyName"></span> / DIGITAL SYSTEMS. HUMAN AMBITION.</p><a href="/admin">Studio access ↗</a><button id="motionToggle" type="button" aria-pressed="false" data-i18n="motion.pause">Остановить анимации</button></div>
+</footer>
+<div id="demoToast" class="demo-toast" role="status" aria-live="polite"></div>
+</body>
+</html>

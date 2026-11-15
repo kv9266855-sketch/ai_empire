@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="theme-color" content="#fafbff">
+  <title>AI EMPIRE — Control room</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/admin/admin.css">
+  <link rel="stylesheet" href="/admin/winter.css">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <script src="/js/runtime.js"></script>
+  <script src="/js/theme.js"></script>
+  <script src="/admin/admin.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#workspace">К содержимому</a>
+  <section id="loginScreen" class="login-screen" aria-labelledby="loginTitle">
+    <div class="login-art" aria-hidden="true"><span class="eyebrow">AI EMPIRE / PRIVATE WORKSPACE</span><p>Бизнес.<br>Под вашим<br><em>контролем.</em></p><div class="orbit"><i></i><i></i><i></i><b>AI</b></div><span class="login-note">Люди принимают решения.<br>Системы помогают действовать.</span></div>
+    <div class="login-panel">
+      <a class="wordmark" href="/">AI EMPIRE<span>↗</span></a>
+      <div class="login-form-wrap"><span class="eyebrow">OWNER ACCESS</span><h1 id="loginTitle">Control room</h1><p class="muted">Войдите, чтобы управлять проектами, контентом и AI-агентами.</p>
+        <form id="loginForm">
+          <label>Email<input name="email" type="email" autocomplete="username" required maxlength="254" placeholder="you@company.com"></label>
+          <label>Пароль<input name="password" type="password" autocomplete="current-password" required minlength="12" maxlength="200"></label>
+          <p id="loginError" class="form-error" role="alert"></p>
+          <button class="button button-primary" type="submit">Войти <span aria-hidden="true">↗</span></button>
+        </form>
+        <p class="login-help">Первый аккаунт создаётся владельцем через серверную команду. Доступ к данным защищён авторизацией.</p>
+      </div>
+      <a class="back-link" href="/">← Вернуться на сайт</a>
+    </div>
+  </section>
+  <div id="app" class="app" hidden>
+    <aside id="sidebar" class="sidebar">
+      <a href="/" class="wordmark">AI EMPIRE<span>↗</span></a>
+      <p class="eyebrow sidebar-label">CONTROL ROOM / V3</p>
+      <nav id="adminNav" aria-label="Разделы управления"></nav>
+      <div class="sidebar-bottom"><div class="owner-mark">AE</div><div><b id="ownerName">Владелец</b><span>Owner workspace</span></div><button id="logoutButton" class="icon-button" aria-label="Выйти">↪</button></div>
+    </aside>
+    <main id="workspace" class="workspace" tabindex="-1">
+      <header class="topbar"><div><button id="menuButton" class="icon-button mobile-menu" aria-label="Открыть меню" aria-expanded="false" aria-controls="sidebar">☰</button><span class="breadcrumb">WORKSPACE <span>/</span> <b id="breadcrumb">Overview</b></span></div><div class="topbar-actions"><span id="connectionStatus" class="connection"><i></i> PostgreSQL</span><a href="/" target="_blank" rel="noopener">На сайт ↗</a></div></header>
+      <div class="page-heading"><div><p class="eyebrow" id="pageEyebrow">YOUR BUSINESS, CONNECTED</p><h1 id="pageTitle">Overview<span>.</span></h1><p class="muted" id="pageDescription">Реальные данные вашего бизнеса в одном месте.</p></div><div id="pageActions" class="page-actions"></div></div>
+      <div id="pageContent" aria-live="polite" aria-busy="false"></div>
+      <footer class="workspace-footer"><span>AI EMPIRE / OWNER WORKSPACE</span><span id="updatedAt">Ожидание данных</span></footer>
+    </main>
+  </div>
+  <dialog id="editorDialog" class="editor-dialog" aria-labelledby="editorTitle"><form id="editorForm"><div class="dialog-heading"><div><p class="eyebrow">WORKSPACE EDITOR</p><h2 id="editorTitle">Редактирование</h2></div><button id="closeEditor" type="button" class="icon-button" aria-label="Закрыть">✕</button></div><div id="editorFields" class="editor-fields"></div><p id="editorError" class="form-error" role="alert"></p><div class="dialog-actions"><button id="cancelEditor" type="button" class="button button-outline">Отмена</button><button id="saveEditor" type="submit" class="button button-primary">Сохранить ↗</button></div></form></dialog>
+  <dialog id="detailDialog" class="editor-dialog" aria-labelledby="detailTitle"><div class="dialog-heading"><div><p class="eyebrow">WORKSPACE DETAIL</p><h2 id="detailTitle">Подробности</h2></div><button id="closeDetail" type="button" class="icon-button" aria-label="Закрыть">✕</button></div><div id="detailContent"></div></dialog>
+  <div id="toasts" class="toasts" role="status" aria-live="polite"></div>
+</body>
+</html>

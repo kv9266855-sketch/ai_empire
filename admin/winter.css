@@ -1,0 +1,50 @@
+/* Owner workspace — Winter Edition. Calm glass surfaces and ice borders; no falling snow over working data. */
+html[data-theme=winter]{--paper:#fafbff;--ink:#192632;--wine:#821d32;--line:#d5e1ea;--soft:#e8f0f7;--muted:#5d6f7f;--white:rgba(250,251,255,.78);--green:#3f6b5a;--ice:#f0f5fa;--frost:#dceaf5;--silver:#b9c9d5}
+html[data-theme=winter] body{background:radial-gradient(60% 40% at 85% 0%,#dceaf5,transparent 70%),radial-gradient(40% 30% at 0% 100%,#e8f0f7,transparent 70%),linear-gradient(180deg,#fafbff,#f0f5fa) fixed}
+html[data-theme=winter] ::selection{background:#dceaf5}
+
+/* glass surfaces */
+html[data-theme=winter] .panel,html[data-theme=winter] .stat-grid,html[data-theme=winter] .agent-card,html[data-theme=winter] .table-wrap,html[data-theme=winter] .lead-card,html[data-theme=winter] .editor-dialog{background:rgba(250,251,255,.72);-webkit-backdrop-filter:blur(14px) saturate(1.1);backdrop-filter:blur(14px) saturate(1.1);border-color:rgba(185,201,213,.65);box-shadow:inset 0 1px 0 rgba(255,255,255,.95),0 14px 40px -28px rgba(25,38,50,.35)}
+html[data-theme=winter] .stat-card{border-right-color:rgba(185,201,213,.55)}
+html[data-theme=winter] .kanban-column,html[data-theme=winter] th,html[data-theme=winter] .notice,html[data-theme=winter] .upload-box{background:rgba(220,234,245,.45)}
+html[data-theme=winter] .sidebar{background:linear-gradient(180deg,rgba(240,245,250,.92),rgba(220,234,245,.85));-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border-right-color:rgba(185,201,213,.7)}
+html[data-theme=winter] .nav-link:hover{background:rgba(185,201,213,.35)}
+html[data-theme=winter] .nav-link.active{background:#192632;box-shadow:inset 2px 0 0 #821d32,0 10px 24px -14px rgba(25,38,50,.6)}
+html[data-theme=winter] .login-art{background:linear-gradient(160deg,rgba(25,38,50,.12),rgba(25,38,50,.02)),url(/assets/images/winter-peaks.webp) center/cover}
+html[data-theme=winter] .login-art>p,html[data-theme=winter] .login-note{text-shadow:0 1px 18px rgba(250,251,255,.9)}
+html[data-theme=winter] .orbit i{border-color:#9fb3c4}
+html[data-theme=winter] input,html[data-theme=winter] select,html[data-theme=winter] textarea{background:rgba(255,255,255,.85);border-color:#c5d4df}
+html[data-theme=winter] input:focus,html[data-theme=winter] select:focus,html[data-theme=winter] textarea:focus{border-color:#821d32;box-shadow:0 0 0 3px rgba(220,234,245,.9)}
+html[data-theme=winter] .badge{background:rgba(240,245,250,.9)}
+html[data-theme=winter] .owner-mark{background:#dceaf5}
+html[data-theme=winter] .toast{background:rgba(25,38,50,.95);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
+html[data-theme=winter] .editor-dialog{background:rgba(250,251,255,.94)}
+html[data-theme=winter] .editor-dialog::backdrop{background:rgba(25,38,50,.38);backdrop-filter:blur(4px)}
+html[data-theme=winter] .budget-track{background:#dceaf5}
+html[data-theme=winter] .budget-track i{background:linear-gradient(90deg,#9b2a42,#821d32);box-shadow:0 0 10px rgba(130,29,50,.35)}
+
+/* ice borders: hairline highlight along the top edge of key surfaces */
+html[data-theme=winter] .panel,html[data-theme=winter] .agent-card{position:relative}
+html[data-theme=winter] .panel::before,html[data-theme=winter] .agent-card::before{content:"";position:absolute;left:0;right:0;top:-1px;height:1px;background:linear-gradient(90deg,transparent,#fff 20%,#b9c9d5 50%,#fff 80%,transparent);pointer-events:none}
+
+/* winter icons where they make sense */
+html[data-theme=winter] .wordmark span,html[data-theme=winter] .nav-link[data-page=agents] .nav-icon{font-size:0}
+html[data-theme=winter] .wordmark span::after{content:"❄";font-size:20px}
+html[data-theme=winter] .nav-link[data-page=agents] .nav-icon::after{content:"❄";font-size:16px}
+
+/* charts: frosted grid, burgundy bars with a cold base */
+html[data-theme=winter] .chart line{stroke:#dbe6ee}
+html[data-theme=winter] .chart .chart-bar{fill:#821d32;filter:drop-shadow(0 6px 10px rgba(130,29,50,.18))}
+
+/* smooth section transitions + frost entrance for data blocks */
+html[data-theme=winter] #pageContent.page-enter{animation:frost-page .55s cubic-bezier(.2,.8,.2,1)}
+html[data-theme=winter] #pageContent.page-enter .stat-card,html[data-theme=winter] #pageContent.page-enter .panel,html[data-theme=winter] #pageContent.page-enter .agent-card{animation:frost-in .9s cubic-bezier(.2,.8,.2,1) both}
+html[data-theme=winter] #pageContent.page-enter .stat-card:nth-child(2),html[data-theme=winter] #pageContent.page-enter .panel:nth-child(2){animation-delay:.08s}
+html[data-theme=winter] #pageContent.page-enter .stat-card:nth-child(3){animation-delay:.16s}
+html[data-theme=winter] #pageContent.page-enter .stat-card:nth-child(4){animation-delay:.24s}
+@keyframes frost-page{from{opacity:0;transform:translateY(8px)}}
+@keyframes frost-in{from{opacity:0;filter:blur(10px);transform:translateY(10px)}}
+@media(prefers-reduced-motion:reduce){html[data-theme=winter] #pageContent.page-enter,html[data-theme=winter] #pageContent.page-enter *{animation:none!important}}
+.theme-choice{display:flex;gap:8px;margin-top:14px}
+.theme-choice [aria-pressed=true]{background:var(--ink);color:var(--paper)}
+@media(max-width:760px){html[data-theme=winter] .panel,html[data-theme=winter] .stat-grid,html[data-theme=winter] .agent-card,html[data-theme=winter] .table-wrap,html[data-theme=winter] .lead-card{-webkit-backdrop-filter:none;backdrop-filter:none;background:rgba(250,251,255,.92)}}
